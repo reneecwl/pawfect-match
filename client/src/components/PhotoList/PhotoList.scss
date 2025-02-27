@@ -2,86 +2,86 @@
 @use "../../styles/partials/typography";
 
 .photolist {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 5rem;
+
+  &__card {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-bottom: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    // gap: 1rem;
+    width: 30%;
+    height: 32rem;
+    border: 0.125rem solid $secondary-color;
+    overflow: hidden;
+    border-radius: 1.25rem;
+  }
 
-    &__card {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        // gap: 1rem;
-        width: 30%;
-        height: 32rem;
-        border: 0.125rem solid $secondary-color;
-        overflow: hidden;
-        border-radius: 1.25rem;
-    }
+  &__no-result {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    font-size: 2rem;
+    font-family: "Sour gummy";
+  }
 
-    &__no-result {
-        display: flex;
-        flex-direction: column;
-        margin: 3rem auto;
-        font-size: 2rem;
-        font-family: "Sour gummy";
-    }
-
-    &__error-image {
-        width: 12rem;
-        margin: 2rem auto;
-    }
+  &__error-image {
+    width: 12rem;
+    margin: 2rem auto;
+  }
 }
 
 .card {
+  &__image {
+    width: 100%; // Ensures the image fills the card width
+    height: 20rem;
+    // height: 0;
+    // padding-bottom: 56.25%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-bottom: 0.125rem solid $primary-color;
+    transition: 2s ease-in;
 
-    &__image {
-        width: 100%; // Ensures the image fills the card width
-        height: 20rem;
-        // height: 0;
-        // padding-bottom: 56.25%;
-        object-fit: cover;
-        margin-bottom: 1rem;
-        border-bottom: .125rem solid $primary-color;
-        transition: 2s ease-in;
-
-        &:hover {
-            height: 32rem;
-            width: 160%;
-            // aspect-ratio: 1/1;
-        }
-
+    &:hover {
+      height: 32rem;
+      width: 160%;
+      // aspect-ratio: 1/1;
     }
+  }
 
-    &__name {
-        padding: 0.5rem 1rem;
-        font-weight: 600;
+  &__name {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+  }
+
+  &__type {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    padding: 0.5rem 1rem;
+  }
+
+  &__button {
+    margin-bottom: 1rem;
+    height: 2rem;
+    width: 6rem;
+    font-weight: 600;
+    background-color: $primary-color;
+    align-self: center;
+    border: 1px solid $primary-color;
+    border-radius: 0.6rem;
+    font-family: "Sour Gummy";
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $secondary-color-light;
+      border: 1px solid $secondary-color;
     }
-
-    &__type {
-        padding: 0.5rem 1rem;
-        font-weight: 600;
-        text-transform: capitalize;
-    }
-
-    &__description {
-        padding: 0.5rem 1rem;
-    }
-
-    &__button {
-        margin-bottom: 1rem;
-        height: 2rem;
-        width: 6rem;
-        font-weight: 600;
-        background-color: $primary-color;
-        align-self: center;
-        border-radius: .625rem;
-
-        &:hover {
-            background-color: $secondary-color;
-            color: $secondary-color-light;
-        }
-
-    }
+  }
 }
