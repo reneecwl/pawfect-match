@@ -35,6 +35,12 @@ export default function PhotoList({ searchQuery }) {
       })
     : photos;
 
+  const handleClick = (photoName) => {
+    const emailSubject = `Adoption Inquiry: ${photoName}`;
+    const mailtoLink = `mailto:info@pawfectmatch.com?subject=${emailSubject}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div className="photolist">
       {filteredPhotos.length === 0 ? (
@@ -49,10 +55,7 @@ export default function PhotoList({ searchQuery }) {
         </div>
       ) : (
         filteredPhotos.map((photo) => (
-          <div
-            key={photo.id}
-            className="photolist__card"
-          >
+          <div key={photo.id} className="photolist__card">
             <img
               src={`${baseUrl}${photo.photo}`}
               alt={photo.type}
@@ -61,6 +64,12 @@ export default function PhotoList({ searchQuery }) {
             <div className="card__name">Name: {photo.name}</div>
             <div className="card__type">Type: {photo.type}</div>
             <div className="card__description">{photo.description}</div>
+            <button
+              className="card__button"
+              onClick={() => handleClick(photo.name)}
+            >
+              Adopt me!
+            </button>
           </div>
         ))
       )}
