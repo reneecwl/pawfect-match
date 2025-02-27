@@ -16,5 +16,13 @@
     }
     &__button {
         margin-bottom: 2rem;
+        height: 2rem;
+        width: 11rem;
+        font-weight: 600;
+        background-color: $primary-color;
+        &:hover {
+            background-color: $secondary-color;
+            color: $secondary-color-light;
+        }
     }
 }
