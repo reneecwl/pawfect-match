@@ -6,29 +6,35 @@ export default function PhotoList() {
   const [photos, setPhotos] = useState([]);
   const baseUrl = import.meta.env.VITE_API_URL;
 
-  // useEffect(()=> {
-  //   const fetchAnimals= async () => {
-  //     try{
-  //       const response = await axios.get(`${baseUrl}/`);
-
-  //     }
-  //   }
-  // })
+  useEffect(() => {
+    const fetchPhotos = async () => {
+      try {
+        const response = await axios.get(`${baseUrl}/`);
+        setPhotos(response.data);
+      } catch (error) {
+        console.error("The animals are still on their way", error);
+      }
+    };
+    fetchPhotos();
+  }, []);
 
   return (
     <div className="photolist">
-      <div className="photolist__card">
-        <img
-          src="#"
-          className="card__image"
-        />
-        <div className="card__name">Name: </div>
-        <div className="card__type">Type: </div>
-        <div className="card__description">Description:</div>
-        {/* <div className="card__name">Name: {animal.name}</div>
-        <div className="card__type">Type: {animal.type}</div>
-        <div className="card__description">{animal.description}</div> */}
-      </div>
+      {photos.map((photo) => (
+        <div
+          key={photo.id}
+          className="photolist__card"
+        >
+          <img
+            src={`${baseUrl}${photo.photo}`}
+            alt={photo.type}
+            className="card__image"
+          />
+          <div className="card__name">Name: {photo.name}</div>
+          <div className="card__type">Type: {photo.type}</div>
+          <div className="card__description">{photo.description}</div>
+        </div>
+      ))}
     </div>
   );
 }
