@@ -14,10 +14,11 @@ export default function SearchBar({ setSearchQuery }) {
 
   return (
     <div className="searchbar">
+      <h2 className="searchbar__title">Search to find your new best friend!</h2>
       <input
+        className="searchbar__input"
         type="text"
         placeholder="Your new best friend is waiting for you..."
-        className="searchbar__searchbar"
         value={inputValue}
         onChange={handleInputChange}
       />
@@ -27,7 +28,6 @@ export default function SearchBar({ setSearchQuery }) {
       >
         Find my Pawfect Match!
       </button>
-      <h3 className="searchbar__title">Search to find your new best friend!</h3>
     </div>
   );
 }
