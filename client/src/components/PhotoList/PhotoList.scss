@@ -1,23 +1,35 @@
 @use "../../styles/partials/variables" as *;
-
+@use "../../styles/partials/typography";
 .photolist {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 5rem;
 
-    &__card {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        // gap: 1rem;
-        width: 30%;
-        height: 32rem;
-        border: .125rem solid $secondary-color;
-        overflow: hidden;
-        border-radius: 1.25rem;
-    }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // gap: 1rem;
+    width: 30%;
+    height: 32rem;
+    border: 0.125rem solid $secondary-color;
+    overflow: hidden;
+    border-radius: 1.25rem;
+  }
+
+  &__no-result {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    font-size: 2rem;
+    font-family: "Sour gummy";
+  }
+  &__error-image {
+    width: 12rem;
+    margin: 2rem auto;
+  }
 }
 
 .card {
@@ -44,16 +56,15 @@
         font-weight: 600;
     }
 
-    &__type {
-        padding: 0.5rem 1rem;
-        font-weight: 600;
-        text-transform: capitalize;
+  &__type {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
 
-    }
-
-    &__description {
-        padding: 0.5rem 1rem;
-    }
+  &__description {
+    padding: 0.5rem 1rem;
+  }
 
     &__button {
         margin-bottom: 1rem;

@@ -1,4 +1,5 @@
 import "./PhotoList.scss";
+import travellingDuck from "./../../assets/images/duck-travelling.jpg";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -19,11 +20,19 @@ export default function PhotoList({ searchQuery }) {
   }, []);
 
   const filteredPhotos = searchQuery
-    ? photos.filter(
-        (photo) =>
-          photo.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          photo.type.toLowerCase().includes(searchQuery.toLowerCase())
-      )
+    ? photos.filter((photo) => {
+        const lowerCaseName = photo.name.toLowerCase();
+        const lowerCaseType = photo.type.toLowerCase();
+        const searchInput = searchQuery.toLowerCase().split(" ");
+
+        for (let i = 0; i < searchInput.length; i++) {
+          const term = searchInput[i];
+          if (lowerCaseName.includes(term) || lowerCaseType.includes(term)) {
+            return true;
+          }
+        }
+        return false;
+      })
     : photos;
 
   const handleClick = (photoName) => {
@@ -35,7 +44,15 @@ export default function PhotoList({ searchQuery }) {
   return (
     <div className="photolist">
       {filteredPhotos.length === 0 ? (
-        <div className="photolist__no-result">Your pawfect match is still on the way!</div>
+        <div className="photolist__no-result">
+          {" "}
+          Your pawfect match is still on the way!
+          <img
+            className="photolist__error-image"
+            src={travellingDuck}
+            alt="duck"
+          />
+        </div>
       ) : (
         filteredPhotos.map((photo) => (
           <div key={photo.id} className="photolist__card">
