@@ -38,7 +38,7 @@
     "id": "9d8e239c-3953-4822-83f2-ccdd98b8c5e6",
     "photo": "/images/Photo-05.png",
     "name": "Gary",
-    "type": "iguana",
+    "type": "lizard",
     "description": "Gary is from the Galapagos, or so we're told. He loves to sun-bathe."
   },
   {
@@ -82,5 +82,68 @@
     "name": "Dr. Diabolical",
     "type": "duck",
     "description": "Dr. Diabolical is a menace. But who could resist that face?"
+  },
+  {
+    "id": "3be84b3e-4a4d-463c-8ec3-e71089b2fa2e",
+    "photo": "/images/Photo-12.png",
+    "name": "Claus",
+    "type": "duck",
+    "description": "Claus is a very friendly fellow. He'll waddle after you wherever you go."
+  },
+  {
+    "id": "a4665c2d-75c9-4e1e-9848-ca936f245f21",
+    "photo": "/images/Photo-13.png",
+    "name": "Mrs. Brown",
+    "type": "hamster",
+    "description": "Mrs.Brown seems to be related to Bongo, but we're not sure how. She won't give us her first name."
+  },
+  {
+    "id": "626d5ebf-5508-4392-8228-61e898bc61ad",
+    "photo": "/images/Photo-14.png",
+    "name": "The Ribbit",
+    "type": "frog",
+    "description": "The Ribbit used to be a DJ. He's retired now."
+  },
+  {
+    "id": "304224de-a7ec-4bf5-9496-079812f2b705",
+    "photo": "/images/Photo-15.png",
+    "name": "Dog",
+    "type": "dog",
+    "description": "Dog refuses to respond to anything but 'Dog'. We don't recommend renaming him."
+  },
+  {
+    "id": "89075263-1d06-491c-b6e2-85479538b207",
+    "photo": "/images/Photo-16.png",
+    "name": "Moolissa",
+    "type": "cow",
+    "description": "Moolissa loves to chew hay. She may give you milk if you ask nicely."
+  },
+  {
+    "id": "4763b28f-504e-4835-bce2-556b9a4aa79a",
+    "photo": "/images/Photo-17.png",
+    "name": "Squeakers",
+    "type": "hamster",
+    "description": "Squeakers is extremely talkative. You may want to invest in some earplugs."
+  },
+  {
+    "id": "5208a76e-cf0e-4d09-b6e5-4d2ce5620def",
+    "photo": "/images/Photo-18.png",
+    "name": "Bongo",
+    "type": "hamster",
+    "description": "Bongo is a fitness freak. He'll run all day on his hamster wheel if you let him."
+  },
+  {
+    "id": "6d5c6c31-fe9e-4d25-b2d1-44f8267df524",
+    "photo": "/images/Photo-19.png",
+    "name": "General Meow",
+    "type": "cat",
+    "description": "General Meow is actually very lazy. He is unlikely to lead anyone into battle."
+  },
+  {
+    "id": "ae234583-67f9-4908-91c9-20484cb2709e",
+    "photo": "/images/Photo-20.png",
+    "name": "Liz",
+    "type": "lizard",
+    "description": "Liz is very sassy. Keep her happy with lots of walks and flies."
   }
 ]
