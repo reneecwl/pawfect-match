@@ -20,11 +20,19 @@ export default function PhotoList({ searchQuery }) {
   }, []);
 
   const filteredPhotos = searchQuery
-    ? photos.filter(
-        (photo) =>
-          photo.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          photo.type.toLowerCase().includes(searchQuery.toLowerCase())
-      )
+    ? photos.filter((photo) => {
+        const lowerCaseName = photo.name.toLowerCase();
+        const lowerCaseType = photo.type.toLowerCase();
+        const searchInput = searchQuery.toLowerCase().split(" ");
+
+        for (let i = 0; i < searchInput.length; i++) {
+          const term = searchInput[i];
+          if (lowerCaseName.includes(term) || lowerCaseType.includes(term)) {
+            return true;
+          }
+        }
+        return false;
+      })
     : photos;
 
   return (
