@@ -1,0 +1,149 @@
+[
+  {
+    "id": "6be619d5-de2c-4f62-ac1b-bd2e36d71ab9",
+    "photo": "/images/Photo-00.png",
+    "name": "George",
+    "type": "rhino",
+    "description": "George is basically a giant puppy with armor plating. He loves to go for walks and play in the snow."
+  },
+  {
+    "id": "8f86c7f4-bd18-4e4a-9328-a54a189dd5ba",
+    "photo": "/images/Photo-01.png",
+    "name": "Melody",
+    "type": "frog",
+    "description": "True to her name, Melody loves to sing. She is happiest when sitting on a toadstool."
+  },
+  {
+    "id": "c8ffcfd1-1ff1-4114-bbf1-a023c4a24f9d",
+    "photo": "/images/Photo-02.png",
+    "name": "Mr. Wiggles",
+    "type": "worm",
+    "description": "Would you love me if I were a worm? Mr. Wiggles has a lot of love to give, and all he asks in return is some fresh dirt."
+  },
+  {
+    "id": "8cbf5a70-6cb8-4cce-a4c2-4cde4f84c513",
+    "photo": "/images/Photo-03.png",
+    "name": "Bethany",
+    "type": "cow",
+    "description": "Bethany loves to watch moovies. Her favourite is Chicken Run."
+  },
+  {
+    "id": "37c67839-4608-4994-8ab6-ef9ad609df70",
+    "photo": "/images/Photo-04.png",
+    "name": "Ferdinand",
+    "type": "bull",
+    "description": "Ferdinand is a gentle giant. He's secretly in love with Bethany."
+  },
+  {
+    "id": "9d8e239c-3953-4822-83f2-ccdd98b8c5e6",
+    "photo": "/images/Photo-05.png",
+    "name": "Gary",
+    "type": "lizard",
+    "description": "Gary is from the Galapagos, or so we're told. He loves to sun-bathe."
+  },
+  {
+    "id": "238117b8-6c3b-4f0d-b1c3-97e232980e62",
+    "photo": "/images/Photo-06.png",
+    "name": "Sparky",
+    "type": "hamster",
+    "description": "Sparky loves to chew on cables. It's probably best you keep him out of the computer room."
+  },
+  {
+    "id": "89eff543-8ecf-4a64-abbc-495b6443be6f",
+    "photo": "/images/Photo-07.png",
+    "name": "Her Highness",
+    "type": "cat",
+    "description": "Her Highness runs the place. She spends all day grooming her luxurious fur and surveying her kingdom."
+  },
+  {
+    "id": "7cf76704-9508-4632-8077-caec02d1929e",
+    "photo": "/images/Photo-08.png",
+    "name": "Peter Barker",
+    "type": "dog",
+    "description": "Peter Barker has so much energy that he practically climbs the walls. However, he's good cuddler at bedtime."
+  },
+  {
+    "id": "beffcc61-7d93-47f7-9938-5f0df5ef3bea",
+    "photo": "/images/Photo-09.png",
+    "name": "Atsuko",
+    "type": "tanuki",
+    "description": "Atsuko is a big fan of shiny objects. We recommend locking away your valuables."
+  },
+  {
+    "id": "",
+    "photo": "/images/Photo-10.png",
+    "name": "GR3-G",
+    "type": "robot",
+    "description": "GR3-G is a great companion and an even better vacuum. They might be past their warranty, but their charm will never expire."
+  },
+  {
+    "id": "c27d7e20-b5d1-44fa-854d-9ba5bc2c9fbf",
+    "photo": "/images/Photo-11.png",
+    "name": "Dr. Diabolical",
+    "type": "duck",
+    "description": "Dr. Diabolical is a menace. But who could resist that face?"
+  },
+  {
+    "id": "3be84b3e-4a4d-463c-8ec3-e71089b2fa2e",
+    "photo": "/images/Photo-12.png",
+    "name": "Claus",
+    "type": "duck",
+    "description": "Claus is a very friendly fellow. He'll waddle after you wherever you go."
+  },
+  {
+    "id": "a4665c2d-75c9-4e1e-9848-ca936f245f21",
+    "photo": "/images/Photo-13.png",
+    "name": "Mrs. Brown",
+    "type": "hamster",
+    "description": "Mrs.Brown seems to be related to Bongo, but we're not sure how. She won't give us her first name."
+  },
+  {
+    "id": "626d5ebf-5508-4392-8228-61e898bc61ad",
+    "photo": "/images/Photo-14.png",
+    "name": "The Ribbit",
+    "type": "frog",
+    "description": "The Ribbit used to be a DJ. He's retired now."
+  },
+  {
+    "id": "304224de-a7ec-4bf5-9496-079812f2b705",
+    "photo": "/images/Photo-15.png",
+    "name": "Dog",
+    "type": "dog",
+    "description": "Dog refuses to respond to anything but 'Dog'. We don't recommend renaming him."
+  },
+  {
+    "id": "89075263-1d06-491c-b6e2-85479538b207",
+    "photo": "/images/Photo-16.png",
+    "name": "Moolissa",
+    "type": "cow",
+    "description": "Moolissa loves to chew hay. She may give you milk if you ask nicely."
+  },
+  {
+    "id": "4763b28f-504e-4835-bce2-556b9a4aa79a",
+    "photo": "/images/Photo-17.png",
+    "name": "Squeakers",
+    "type": "hamster",
+    "description": "Squeakers is extremely talkative. You may want to invest in some earplugs."
+  },
+  {
+    "id": "5208a76e-cf0e-4d09-b6e5-4d2ce5620def",
+    "photo": "/images/Photo-18.png",
+    "name": "Bongo",
+    "type": "hamster",
+    "description": "Bongo is a fitness freak. He'll run all day on his hamster wheel if you let him."
+  },
+  {
+    "id": "6d5c6c31-fe9e-4d25-b2d1-44f8267df524",
+    "photo": "/images/Photo-19.png",
+    "name": "General Meow",
+    "type": "cat",
+    "description": "General Meow is actually very lazy. He is unlikely to lead anyone into battle."
+  },
+  {
+    "id": "ae234583-67f9-4908-91c9-20484cb2709e",
+    "photo": "/images/Photo-20.png",
+    "name": "Liz",
+    "type": "lizard",
+    "description": "Liz is very sassy. Keep her happy with lots of walks and flies."
+  }
+]
