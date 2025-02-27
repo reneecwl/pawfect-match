@@ -1,0 +1,17 @@
+@use "../../styles/partials/variables" as *;
+
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__title {
+        padding: 1rem;
+    }
+    &__input {
+        margin: 1rem;
+        width: 50%;
+       padding: 0.5rem;
+    }
+}

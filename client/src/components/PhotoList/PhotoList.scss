@@ -1,0 +1,50 @@
+@use "../../styles/partials/variables" as *;
+
+.photolist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 5rem;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // gap: 1rem;
+        width: 30%;
+        height: 30rem;
+        border: .125rem solid $secondary-color;
+        overflow: hidden;
+        border-radius: 1.25rem;
+    }
+}
+
+.card {
+
+    &__image {
+        width: 100%; // Ensures the image fills the card width
+        height: 20rem;
+        // height: 80%; // Keeps aspect ratio
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border-bottom: .125rem solid $primary-color;
+
+    }
+
+    &__name {
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+    }
+
+    &__type {
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+        text-transform: capitalize;
+
+    }
+
+    &__description {
+        padding: 0.5rem 1rem;
+    }
+}
