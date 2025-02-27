@@ -28,21 +28,25 @@ export default function PhotoList({ searchQuery }) {
 
   return (
     <div className="photolist">
-      {filteredPhotos.map((photo) => (
-        <div
-          key={photo.id}
-          className="photolist__card"
-        >
-          <img
-            src={`${baseUrl}${photo.photo}`}
-            alt={photo.type}
-            className="card__image"
-          />
-          <div className="card__name">Name: {photo.name}</div>
-          <div className="card__type">Type: {photo.type}</div>
-          <div className="card__description">{photo.description}</div>
-        </div>
-      ))}
+      {filteredPhotos.length === 0 ? (
+        <div className="photolist__no-result"> Your pawfect match is still on the way!</div>
+      ) : (
+        filteredPhotos.map((photo) => (
+          <div
+            key={photo.id}
+            className="photolist__card"
+          >
+            <img
+              src={`${baseUrl}${photo.photo}`}
+              alt={photo.type}
+              className="card__image"
+            />
+            <div className="card__name">Name: {photo.name}</div>
+            <div className="card__type">Type: {photo.type}</div>
+            <div className="card__description">{photo.description}</div>
+          </div>
+        ))
+      )}
     </div>
   );
 }
