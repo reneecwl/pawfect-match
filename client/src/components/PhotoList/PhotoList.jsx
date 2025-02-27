@@ -1,4 +1,5 @@
 import "./PhotoList.scss";
+import travellingDuck from "./../../assets/images/duck-travelling.jpg";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -29,7 +30,15 @@ export default function PhotoList({ searchQuery }) {
   return (
     <div className="photolist">
       {filteredPhotos.length === 0 ? (
-        <div className="photolist__no-result"> Your pawfect match is still on the way!</div>
+        <div className="photolist__no-result">
+          {" "}
+          Your pawfect match is still on the way!
+          <img
+            className="photolist__error-image"
+            src={travellingDuck}
+            alt="duck"
+          />
+        </div>
       ) : (
         filteredPhotos.map((photo) => (
           <div
