@@ -1,17 +1,26 @@
 @use "../../styles/partials/variables" as *;
 
-
 .searchbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    &__title {
-        padding: 1rem;
-    }
-    &__input {
-        margin: 1rem;
-        width: 50%;
-       padding: 0.5rem;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    padding: 1rem;
+  }
+  &__input {
+    margin: 1rem;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1.8px solid $secondary-color-dark;
+  }
+  &__button {
+    border-radius: 0.3rem;
+    border: 1.5px solid $secondary-color-dark;
+    margin-bottom: 1rem;
+    background-color: $primary-color-light;
+    height: 1.5rem;
+    width: 30%;
+  }
 }
