@@ -25,10 +25,15 @@
     &__image {
         width: 100%; // Ensures the image fills the card width
         height: 20rem;
-        // height: 80%; // Keeps aspect ratio
         object-fit: cover;
         margin-bottom: 1rem;
         border-bottom: .125rem solid $primary-color;
+        transition: height 2s ease-in-out, aspect-ratio 2s ease-in-out; 
+        &:hover {
+            height: 30rem;
+            aspect-ratio: 1/1;
+    
+        }
 
     }
 
