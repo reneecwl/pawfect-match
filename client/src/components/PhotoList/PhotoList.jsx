@@ -2,7 +2,7 @@ import "./PhotoList.scss";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export default function PhotoList() {
+export default function PhotoList({ searchQuery }) {
   const [photos, setPhotos] = useState([]);
   const baseUrl = import.meta.env.VITE_API_URL;
 
@@ -18,23 +18,35 @@ export default function PhotoList() {
     fetchPhotos();
   }, []);
 
+  const filteredPhotos = searchQuery
+    ? photos.filter(
+        (photo) =>
+          photo.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          photo.type.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : photos;
+
   return (
     <div className="photolist">
-      {photos.map((photo) => (
-        <div
-          key={photo.id}
-          className="photolist__card"
-        >
-          <img
-            src={`${baseUrl}${photo.photo}`}
-            alt={photo.type}
-            className="card__image"
-          />
-          <div className="card__name">Name: {photo.name}</div>
-          <div className="card__type">Type: {photo.type}</div>
-          <div className="card__description">{photo.description}</div>
-        </div>
-      ))}
+      {filteredPhotos.length === 0 ? (
+        <div className="photolist__no-result"> Your pawfect match is still on the way!</div>
+      ) : (
+        filteredPhotos.map((photo) => (
+          <div
+            key={photo.id}
+            className="photolist__card"
+          >
+            <img
+              src={`${baseUrl}${photo.photo}`}
+              alt={photo.type}
+              className="card__image"
+            />
+            <div className="card__name">Name: {photo.name}</div>
+            <div className="card__type">Type: {photo.type}</div>
+            <div className="card__description">{photo.description}</div>
+          </div>
+        ))
+      )}
     </div>
   );
 }
