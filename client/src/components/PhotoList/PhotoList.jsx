@@ -3,15 +3,18 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function PhotoList() {
+  const [photos, setPhotos] = useState([]);
   const baseUrl = import.meta.env.VITE_API_URL;
 
   // useEffect(()=> {
   //   const fetchAnimals= async () => {
   //     try{
-  //       const response = await axios.get(`${baseUrl}/`)
+  //       const response = await axios.get(`${baseUrl}/`);
+
   //     }
   //   }
   // })
+
   return (
     <div className="photolist">
       <div className="photolist__card">
